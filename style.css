@@ -1,0 +1,110 @@
+/*
+ *   _____ _____            _____ _  ___    _ ______          _____       _____ _   _ _____  _    _  _____ _______ _____  _____ ______  _____
+ * / ____|  __ \     /\   / ____| |/ / |  | |  ____|   /\   |  __ \     |_   _| \ | |  __ \| |  | |/ ____|__   __|  __ \|_   _|  ____|/ ____|
+ * | |    | |__) |   /  \ | |    | ' /| |__| | |__     /  \  | |  | |______| | |  \| | |  | | |  | | (___    | |  | |__) | | | | |__  | (___
+ * | |    |  _  /   / /\ \| |    |  < |  __  |  __|   / /\ \ | |  | |______| | | . ` | |  | | |  | |\___ \   | |  |  _  /  | | |  __|  \___ \
+ * | |____| | \ \  / ____ \ |____| . \| |  | | |____ / ____ \| |__| |     _| |_| |\  | |__| | |__| |____) |  | |  | | \ \ _| |_| |____ ____) |
+ *  \_____|_|  \_\/_/    \_\_____|_|\_\_|  |_|______/_/    \_\_____/     |_____|_| \_|_____/ \____/|_____/   |_|  |_|  \_\_____|______|_____/
+ *                                                                                        
+*/
+@font-face {
+    font-family: "santairelax";
+    src: url("/font.ttf")
+}
+
+html {
+    background: linear-gradient(90deg, rgba(44, 44, 44, 1) 0%, rgba(76, 76, 76, 1) 54%);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #1231b9, #D8A47F, #EF8354, #EF8354, #DF3B57, #0F7173);
+    background-size: 500% 500%;
+    animation: gradient 20s ease infinite;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+* {
+    webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.background {
+    height: 200px;
+    position: relative;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 11vh;
+    letter-spacing: 0.6rem;
+    font-family: 'santairelax';
+}
+
+/* responsive shit */
+@media (max-width: 768px) {
+    .title {
+        font-size: 9vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 9vh;
+    }
+}
+
+button {
+    cursor: pointer;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+    font-size: 3vh;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'santairelax';
+    /*background-color: #4287f5;*/
+    background-color: transparent;
+    transition: 300ms;
+}
+
+button:hover {
+    color: white;
+    transition: 300ms;
+    background-color: #03fcf4;
+    /*font-size: 3.3rem;*/
+}
+
+#instagram:hover {
+    background-color: #9e0d84;
+}
+
+#youtube:hover {
+    background-color: red;
+}
+
+#discord:hover {
+    background-color: #5865F2;
+}
